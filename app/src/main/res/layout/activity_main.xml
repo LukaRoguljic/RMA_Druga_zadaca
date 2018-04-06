@@ -3,13 +3,14 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/customColor">
 
     <Button
         android:id="@+id/kmMilesBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Kilometers to miles"
+        android:text="@string/kmMilesText"
         android:layout_centerHorizontal="true"/>
 
     <Button
@@ -18,20 +19,20 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/kmMilesBtn"
         android:layout_centerHorizontal="true"
-        android:text="KILOGRAMS to LBS"/>
+        android:text="@string/kgLbsText"/>
 
     <Button
         android:id="@+id/celKelvinBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/kgLbsBtn"
-        android:text="Celsius to Kelvin"/>
+        android:text="@string/celKelvinText"/>
 
     <Button
         android:id="@+id/kmMphBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/celKelvinBtn"
-        android:text="Kmph to mph"/>
+        android:text="@string/kmhMphtext"/>
 
 </RelativeLayout>

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ConvertMe</string>
+    <string name="kmMilesText">Kilometers to miles</string>
+    <string name="kgLbsText">KILOGRAMS to LBS</string>
+    <string name="celKelvinText">Celsius to Kelvin</string>
+    <string name="kmhMphtext">Kmph to mph</string>
 </resources>
