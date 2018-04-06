@@ -5,8 +5,33 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
+    <Button
+        android:id="@+id/kmMilesBtn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Kilometers to miles"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/kgLbsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kmMilesBtn"
+        android:layout_centerHorizontal="true"
+        android:text="KILOGRAMS to LBS"/>
+
+    <Button
+        android:id="@+id/celKelvinBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kgLbsBtn"
+        android:text="Celsius to Kelvin"/>
+
+    <Button
+        android:id="@+id/kmMphBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/celKelvinBtn"
+        android:text="Kmph to mph"/>
 
 </RelativeLayout>
