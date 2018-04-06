@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".KmToMiles" />
+        <activity android:name=".KgToLbs" />
+        <activity android:name=".CelToKelvin"></activity>
     </application>
 
 </manifest>
