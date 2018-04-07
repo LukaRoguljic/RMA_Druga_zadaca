@@ -4,4 +4,13 @@
     <string name="kgLbsText">KILOGRAMS to LBS</string>
     <string name="celKelvinText">Celsius to Kelvin</string>
     <string name="kmhMphtext">Kmph to mph</string>
+    <string name="btnConvertText">CONVERT</string>
+    <string name="etCelsius">Enter value in Celsius degrees</string>
+    <string name="tvCelsius">CELSIUS TO KELVIN</string>
+    <string name="tvKgToLbs">KILOGRAMS TO LBS</string>
+    <string name="etKgToLbs">Enter value in kilograms</string>
+    <string name="tvKmToMiles">KILOMETERS TO MILES</string>
+    <string name="etKmValue">Enter value in kilometers</string>
+    <string name="tvKmphToMph">KMPH TO MPH</string>
+    <string name="etKmphValue">Enter value of speed in kilometers per hour</string>
 </resources>

@@ -6,30 +6,30 @@
     android:background="@color/customColor">
 
     <TextView
-        android:id="@+id/titleKilometers"
+        android:id="@+id/titleKmph"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tvKmToMiles"
+        android:text="@string/tvKmphToMph"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
         android:textColor="#FF0000"
         />
 
     <EditText
-        android:id="@+id/et_KmToMiles"
+        android:id="@+id/et_KmphToMph"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/titleKilometers"
-        android:hint="@string/etKmValue"
+        android:layout_below="@id/titleKmph"
+        android:hint="@string/etKmphValue"
         android:textColor="#000000"
         android:maxLength="4"
         />
 
     <Button
-        android:id="@+id/kmConvertBtn"
+        android:id="@+id/kmphConvertBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/et_KmToMiles"
+        android:layout_below="@id/et_KmphToMph"
         android:layout_centerHorizontal="true"
         android:text="@string/btnConvertText"
         />

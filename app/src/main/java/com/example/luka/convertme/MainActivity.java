@@ -42,4 +42,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(startCelToKelvinActivity);
     }
 
+    @OnClick(R.id.kmMphBtn)
+        public void startKmhMph(){
+            Intent startKmhToMphActivity = new Intent(this,KmphMph.class);
+            startActivity(startKmhToMphActivity);
+    }
+
 }

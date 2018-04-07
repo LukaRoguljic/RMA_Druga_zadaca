@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.luka.convertme.KgToLbs">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/customColor">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/titleKilograms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvKgToLbs"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        />
+
+    <EditText
+        android:id="@+id/et_KgToLbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleKilograms"
+        android:hint="@string/etKgToLbs"
+        android:textColor="#000000"
+        android:maxLength="4"
+        />
+
+    <Button
+        android:id="@+id/kgConvertBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_KgToLbs"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btnConvertText"
+        />
+
+</RelativeLayout>

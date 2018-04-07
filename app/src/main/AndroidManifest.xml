@@ -18,7 +18,12 @@
         </activity>
         <activity android:name=".KmToMiles" />
         <activity android:name=".KgToLbs" />
-        <activity android:name=".CelToKelvin"></activity>
+        <activity android:name=".CelToKelvin" />
+        <activity android:name=".KmphMph" />
+        <activity android:name=".ResultCelsiusToKelvin" />
+        <activity android:name=".ResultKmToMiles" />
+        <activity android:name=".ResultKgToLbs" />
+        <activity android:name=".ResultKmphToMph"></activity>
     </application>
 
 </manifest>
