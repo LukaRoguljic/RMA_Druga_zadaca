@@ -11,21 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/kmMilesText"
-        android:layout_centerHorizontal="true"/>
-
-    <Button
-        android:id="@+id/kgLbsBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/kmMilesBtn"
-        android:layout_centerHorizontal="true"
-        android:text="@string/kgLbsText"/>
+        />
 
     <Button
         android:id="@+id/celKelvinBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/kgLbsBtn"
+        android:layout_below="@id/kmMilesBtn"
         android:text="@string/celKelvinText"/>
 
     <Button
@@ -34,5 +26,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/celKelvinBtn"
         android:text="@string/kmhMphtext"/>
+
+    <Button
+        android:id="@+id/kgLbsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kmMphBtn"
+        android:text="@string/kgToLbsText"/>
 
 </RelativeLayout>

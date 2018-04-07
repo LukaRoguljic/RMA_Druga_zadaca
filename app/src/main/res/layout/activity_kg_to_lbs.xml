@@ -9,18 +9,18 @@
         android:id="@+id/titleKilograms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tvKgToLbs"
+        android:text="KILOGRAMS TO LBS"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
         android:textColor="#FF0000"
         />
 
     <EditText
-        android:id="@+id/et_KgToLbs"
+        android:id="@+id/et_KgToLBs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleKilograms"
-        android:hint="@string/etKgToLbs"
+        android:hint="@string/kilogramsHint"
         android:textColor="#000000"
         android:maxLength="4"
         />
@@ -29,7 +29,7 @@
         android:id="@+id/kgConvertBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/et_KgToLbs"
+        android:layout_below="@id/et_KgToLBs"
         android:layout_centerHorizontal="true"
         android:text="@string/btnConvertText"
         />

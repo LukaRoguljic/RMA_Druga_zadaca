@@ -17,13 +17,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".KmToMiles" />
-        <activity android:name=".KgToLbs" />
         <activity android:name=".CelToKelvin" />
-        <activity android:name=".KmphMph" />
+        <activity android:name=".KmphToMph" />
         <activity android:name=".ResultCelsiusToKelvin" />
         <activity android:name=".ResultKmToMiles" />
-        <activity android:name=".ResultKgToLbs" />
-        <activity android:name=".ResultKmphToMph"></activity>
+        <activity android:name=".ResultKmphToMph" />
+        <activity android:name=".KgToLbs"></activity>
     </application>
 
 </manifest>
