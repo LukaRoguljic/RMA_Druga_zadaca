@@ -15,4 +15,7 @@
     <string name="etKmphValue">Enter value of speed in kilometers per hour</string>
     <string name="kgToLbsText">KILOGRAMS TO LBS</string>
     <string name="kilogramsHint">Enter value in kilograms</string>
+    <string name="tvResultKelvinTitle">KELVIN</string>
+    <string name="tvLbsResultTitle">LBS</string>
+    <string name="tvMPHResultTitle">MILES PER HOUR</string>
 </resources>
