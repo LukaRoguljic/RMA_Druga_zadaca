@@ -177,6 +177,7 @@ public class ConverterFormula {
         }
     }
 
+    /*------------------------------ SPEED CONVERTER FUNCTION --------------------------*/
     @SuppressLint("SetTextI18n")
     public void speedConvertFun(TextView tvValue, TextView tvSpeed, Intent resultIntent){
         String value            = resultIntent.getStringExtra("valueKmph");
