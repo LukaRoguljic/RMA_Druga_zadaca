@@ -11,10 +11,10 @@ import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.kmMilesBtn)      Button kmMilesBtn;
-    @BindView(R.id.celKelvinBtn)    Button celKelvinBtn;
-    @BindView(R.id.kmMphBtn)        Button kmMphBtn;
-    @BindView(R.id.kgLbsBtn)        Button kgLbsBtn;
+    @BindView(R.id.distanceBtn)      Button kmMilesBtn;
+    @BindView(R.id.temperatureBtn)    Button celKelvinBtn;
+    @BindView(R.id.speedBtn)        Button kmMphBtn;
+    @BindView(R.id.weightBtn)        Button kgLbsBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,27 +24,27 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick(R.id.kmMilesBtn)
+    @OnClick(R.id.distanceBtn)
         public void startKmMiles(){
-        Intent startKmToMilesActivity = new Intent(this,KmToMiles.class);
+        Intent startKmToMilesActivity = new Intent(this,ToDistance.class);
         startActivity(startKmToMilesActivity);
     }
 
-    @OnClick(R.id.celKelvinBtn)
+    @OnClick(R.id.temperatureBtn)
         public void startCelKelvin(){
-            Intent startCelToKelvinActivity = new Intent(this,CelToKelvin.class);
+            Intent startCelToKelvinActivity = new Intent(this,ToTemperature.class);
             startActivity(startCelToKelvinActivity);
     }
 
-    @OnClick(R.id.kmMphBtn)
+    @OnClick(R.id.speedBtn)
         public void startKmhMph(){
-            Intent startKmhToMphActivity = new Intent(this,KmphToMph.class);
+            Intent startKmhToMphActivity = new Intent(this,ToSpeed.class);
             startActivity(startKmhToMphActivity);
     }
 
-    @OnClick(R.id.kgLbsBtn)
+    @OnClick(R.id.weightBtn)
         public void startKgLbs(){
-            Intent startKgToMlsActivity = new Intent(this,KgToLbs.class);
+            Intent startKgToMlsActivity = new Intent(this,ToWeight.class);
             startActivity(startKgToMlsActivity);
     }
 

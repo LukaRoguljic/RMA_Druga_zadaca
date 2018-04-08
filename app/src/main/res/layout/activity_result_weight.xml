@@ -6,32 +6,24 @@
     android:background="@color/customColor">
 
     <TextView
-        android:id="@+id/titleKmph"
+        android:id="@+id/tvWeightResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tvKmphToMph"
+        android:text="231"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold"
-        android:textColor="#FF0000"
-        />
-
-    <EditText
-        android:id="@+id/et_KmphToMph"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/titleKmph"
-        android:hint="@string/etKmphValue"
+        android:layout_centerVertical="true"
+        android:textSize="30dp"
         android:textColor="#000000"
-        android:inputType="number"
         />
 
-    <Button
-        android:id="@+id/kmphConvertBtn"
+
+
+    <TextView
+        android:id="@+id/weightMeasure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/et_KmphToMph"
+        android:layout_below="@id/tvWeightResult"
         android:layout_centerHorizontal="true"
-        android:text="@string/btnConvertText"
-        />
+        android:textSize="20dp"/>
 
 </RelativeLayout>

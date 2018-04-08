@@ -5,25 +5,26 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ResultKgToLbs extends AppCompatActivity {
+public class ResultTemperature extends AppCompatActivity {
 
-    @BindView(R.id.tvLbsResult) TextView tvLbsResult;
+    @BindView(R.id.tvTempResult)  TextView tvKelvinResult;
+    @BindView(R.id.tempMeasure)     TextView tempMeasure;
     TextView tvValue;
+    TextView tvTemp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result_kg_to_lbs);
+        setContentView(R.layout.activity_result_temperature);
 
         ButterKnife.bind(this);
-        tvValue = tvLbsResult;
-
+        tvValue = tvKelvinResult;
+        tvTemp = tempMeasure;
         Intent resultIntent     = getIntent();
-        ConverterFormula objectLbs = new ConverterFormula();
-        objectLbs.kgToLbsConvert(tvValue,resultIntent);
+        ConverterFormula objectKelvin = new ConverterFormula();
+        objectKelvin.tempConvertFun(tvValue,tempMeasure,resultIntent);
     }
 }

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/customColor">
+
+    <TextView
+        android:id="@+id/titleWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvWeightTitle"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        />
+
+    <Spinner
+        android:id="@+id/weightSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleWeight"
+        android:entries="@array/weight"/>
+
+    <EditText
+        android:id="@+id/et_Weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weightSpinner"
+        android:hint="@string/et_WeightValue"
+        android:textColor="#000000"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+        android:id="@+id/tv_toConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_Weight"
+        android:text="@string/convert_to_string"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Spinner
+        android:id="@+id/weightSpinnerToConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_toConvert"
+        android:entries="@array/weightConvert"/>
+
+    <Button
+        android:id="@+id/weightConvertBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weightSpinnerToConvert"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btnConvertText"
+        />
+
+</RelativeLayout>

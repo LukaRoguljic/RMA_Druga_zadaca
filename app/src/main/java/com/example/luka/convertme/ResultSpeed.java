@@ -8,21 +8,24 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ResultKmphToMph extends AppCompatActivity {
+public class ResultSpeed extends AppCompatActivity {
 
-    @BindView(R.id.tvMphResult) TextView tvMphResult;
+    @BindView(R.id.tvSpeedResult) TextView tvMphResult;
+    @BindView(R.id.speedMeasure)  TextView speedMeasure;
     TextView tvValue;
+    TextView tvSpeed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result_kmph_to_mph);
+        setContentView(R.layout.activity_result_speed);
 
         ButterKnife.bind(this);
         tvValue = tvMphResult;
+        tvSpeed = speedMeasure;
 
         Intent resultIntent = getIntent();
-        ConverterFormula objectMph = new ConverterFormula();
-        objectMph.kmphToMphConvert(tvValue,resultIntent);
+        ConverterFormula objectSpeed = new ConverterFormula();
+        objectSpeed.speedConvertFun(tvValue,tvSpeed,resultIntent);
     }
 }

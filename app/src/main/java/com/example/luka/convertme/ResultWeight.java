@@ -5,24 +5,28 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ResultCelsiusToKelvin extends AppCompatActivity {
+public class ResultWeight extends AppCompatActivity {
 
-    @BindView(R.id.tvKelvinResult) TextView tvKelvinResult;
+    @BindView(R.id.tvWeightResult)  TextView tvLbsResult;
+    @BindView(R.id.weightMeasure)  TextView weightMeasure;
     TextView tvValue;
+    TextView tvWeight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result_celsius_to_kelvin);
+        setContentView(R.layout.activity_result_weight);
 
         ButterKnife.bind(this);
-        tvValue = tvKelvinResult;
+        tvValue = tvLbsResult;
+        tvWeight = weightMeasure;
 
         Intent resultIntent     = getIntent();
-        ConverterFormula objectKelvin = new ConverterFormula();
-        objectKelvin.celToKelvinConvert(tvValue,resultIntent);
+        ConverterFormula objectWeight = new ConverterFormula();
+        objectWeight.weightConvertFun(tvValue,tvWeight,resultIntent);
     }
 }

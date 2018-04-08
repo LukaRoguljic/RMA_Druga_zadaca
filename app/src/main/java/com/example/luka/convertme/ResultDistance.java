@@ -8,21 +8,25 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ResultKmToMiles extends AppCompatActivity {
+public class ResultDistance extends AppCompatActivity {
 
-    @BindView(R.id.tvMilesResult)   TextView tvMilesResult;
+    @BindView(R.id.tvDistanceResult)   TextView tvMilesResult;
+    @BindView(R.id.distanceMeasure) TextView distanceMeasure;
     TextView tvValue;
+    TextView tvDistance;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result_km_to_miles);
+        setContentView(R.layout.activity_result_distance);
 
         ButterKnife.bind(this);
         tvValue = tvMilesResult;
+        tvDistance = distanceMeasure;
 
         Intent resultIntent     = getIntent();
-        ConverterFormula objectMiles = new ConverterFormula();
-        objectMiles.kmToMilesConvert(tvValue,resultIntent);
+        ConverterFormula objectDistance = new ConverterFormula();
+        objectDistance.distanceConvertFun(tvValue,tvDistance,resultIntent);
     }
 }

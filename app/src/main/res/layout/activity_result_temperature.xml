@@ -6,7 +6,7 @@
     android:background="@color/customColor">
 
     <TextView
-        android:id="@+id/tvMilesResult"
+        android:id="@+id/tvTempResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="231"
@@ -17,11 +17,11 @@
         />
 
     <TextView
+        android:id="@+id/tempMeasure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvMilesResult"
+        android:layout_below="@id/tvTempResult"
         android:layout_centerHorizontal="true"
-        android:text="MILES"
         android:textSize="20dp"/>
 
 </RelativeLayout>

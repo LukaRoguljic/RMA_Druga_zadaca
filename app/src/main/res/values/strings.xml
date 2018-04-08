@@ -18,4 +18,59 @@
     <string name="tvResultKelvinTitle">KELVIN</string>
     <string name="tvLbsResultTitle">LBS</string>
     <string name="tvMPHResultTitle">MILES PER HOUR</string>
+    <string name="distance_converter">Distance converter</string>
+    <string name="string_enter_value">Enter value</string>
+    <string name="btnDistanceText">DISTANCE</string>
+    <string name="btnTemperatureText">TEMPERATURE</string>
+    <string name="btnSpeedText">SPEED</string>
+    <string name="btnWeightText">WEIGHT</string>
+    <string name="tvWeightTitle">Weight converter</string>
+    <string name="et_WeightValue">Enter value</string>
+    <string name="convert_to_string">CONVERT TO:</string>
+    <string name="speed_converter">Speed converter</string>
+
+
+    <string-array name="distance">
+        <item>Kilometers</item>
+        <item>Miles</item>
+        <item>Yards</item>
+    </string-array>
+
+    <string-array name="distanceConvert">
+        <item>Yards</item>
+        <item>Miles</item>
+        <item>Kilometers</item>
+    </string-array>
+
+    <string-array name="temperature">
+        <item>Celsius</item>
+        <item>Kelvin</item>
+        <item>Fahrenheit</item>
+    </string-array>
+
+    <string-array name="temperatureConvert">
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+        <item>Celsius</item>
+    </string-array>
+
+    <string-array name="weight">
+        <item>Kilograms</item>
+        <item>Lbs</item>
+    </string-array>
+
+    <string-array name="weightConvert">
+        <item>Lbs</item>
+        <item>Kilograms</item>
+    </string-array>
+
+    <string-array name="speed">
+        <item>Kilometers per hour</item>
+        <item>Miles per hour</item>
+    </string-array>
+
+    <string-array name="speedConvert">
+        <item>Miles per hour</item>
+        <item>Kilometers per hour</item>
+    </string-array>
 </resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/customColor">
+
+    <TextView
+        android:id="@+id/titleSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/speed_converter"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        />
+
+    <Spinner
+        android:id="@+id/speedSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleSpeed"
+        android:entries="@array/speed"/>
+
+    <EditText
+        android:id="@+id/et_Speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/speedSpinner"
+        android:hint="@string/string_enter_value"
+        android:textColor="#000000"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+        android:id="@+id/tv_toConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_Speed"
+        android:text="@string/convert_to_string"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Spinner
+        android:id="@+id/speedSpinnerToConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_toConvert"
+        android:entries="@array/speedConvert"/>
+
+    <Button
+        android:id="@+id/speedConvertBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/speedSpinnerToConvert"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btnConvertText"
+        />
+
+</RelativeLayout>

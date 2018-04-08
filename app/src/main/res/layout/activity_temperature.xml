@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/customColor">
+
+    <TextView
+        android:id="@+id/titleTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature converter:"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        />
+
+    <Spinner
+        android:id="@+id/temperatureSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTemperature"
+        android:entries="@array/temperature"/>
+
+    <EditText
+        android:id="@+id/et_Temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temperatureSpinner"
+        android:hint="@string/string_enter_value"
+        android:textColor="#000000"
+        android:inputType="numberDecimal|numberSigned"
+        />
+
+    <TextView
+        android:id="@+id/tv_toConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_Temperature"
+        android:text="CONVERT TO:"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Spinner
+        android:id="@+id/temperatureSpinnerToConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_toConvert"
+        android:entries="@array/temperatureConvert"/>
+
+    <Button
+        android:id="@+id/temperatureConvertBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temperatureSpinnerToConvert"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btnConvertText"
+        />
+
+</RelativeLayout>

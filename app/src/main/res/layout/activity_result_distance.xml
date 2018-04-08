@@ -6,7 +6,7 @@
     android:background="@color/customColor">
 
     <TextView
-        android:id="@+id/tvKelvinResult"
+        android:id="@+id/tvDistanceResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="231"
@@ -17,11 +17,11 @@
         />
 
     <TextView
+        android:id="@+id/distanceMeasure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvKelvinResult"
+        android:layout_below="@id/tvDistanceResult"
         android:layout_centerHorizontal="true"
-        android:text="@string/tvResultKelvinTitle"
         android:textSize="20dp"/>
 
 </RelativeLayout>

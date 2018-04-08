@@ -7,31 +7,31 @@
     android:background="@color/customColor">
 
     <Button
-        android:id="@+id/kmMilesBtn"
+        android:id="@+id/distanceBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/kmMilesText"
+        android:text="@string/btnDistanceText"
         />
 
     <Button
-        android:id="@+id/celKelvinBtn"
+        android:id="@+id/temperatureBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/kmMilesBtn"
-        android:text="@string/celKelvinText"/>
+        android:layout_below="@id/distanceBtn"
+        android:text="@string/btnTemperatureText"/>
 
     <Button
-        android:id="@+id/kmMphBtn"
+        android:id="@+id/speedBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/celKelvinBtn"
-        android:text="@string/kmhMphtext"/>
+        android:layout_below="@id/temperatureBtn"
+        android:text="@string/btnSpeedText"/>
 
     <Button
-        android:id="@+id/kgLbsBtn"
+        android:id="@+id/weightBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/kmMphBtn"
-        android:text="@string/kgToLbsText"/>
+        android:layout_below="@id/speedBtn"
+        android:text="@string/btnWeightText"/>
 
 </RelativeLayout>

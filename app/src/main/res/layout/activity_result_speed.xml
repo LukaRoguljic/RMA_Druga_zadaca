@@ -6,7 +6,7 @@
     android:background="@color/customColor">
 
     <TextView
-        android:id="@+id/tvMphResult"
+        android:id="@+id/tvSpeedResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="231"
@@ -17,11 +17,11 @@
         />
 
     <TextView
+        android:id="@+id/speedMeasure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvMphResult"
+        android:layout_below="@id/tvSpeedResult"
         android:layout_centerHorizontal="true"
-        android:text="@string/tvMPHResultTitle"
         android:textSize="20dp"/>
 
 </RelativeLayout>

@@ -16,14 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".KmToMiles" />
-        <activity android:name=".CelToKelvin" />
-        <activity android:name=".KmphToMph" />
-        <activity android:name=".ResultCelsiusToKelvin" />
-        <activity android:name=".ResultKmToMiles" />
-        <activity android:name=".ResultKmphToMph" />
-        <activity android:name=".KgToLbs" />
-        <activity android:name=".ResultKgToLbs"></activity>
+        <activity android:name=".ToDistance" />
+        <activity android:name=".ToTemperature" />
+        <activity android:name=".ToSpeed" />
+        <activity android:name=".ResultTemperature" />
+        <activity android:name=".ResultDistance" />
+        <activity android:name=".ResultSpeed" />
+        <activity android:name=".ToWeight" />
+        <activity android:name=".ResultWeight"></activity>
     </application>
 
 </manifest>
