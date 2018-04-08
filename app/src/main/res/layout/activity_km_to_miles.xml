@@ -22,7 +22,6 @@
         android:layout_below="@id/titleKilometers"
         android:hint="@string/etKmValue"
         android:textColor="#000000"
-        android:maxLength="4"
         android:inputType="numberDecimal"
         />
 

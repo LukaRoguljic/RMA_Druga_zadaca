@@ -22,10 +22,7 @@ public class ResultCelsiusToKelvin extends AppCompatActivity {
         tvValue = tvKelvinResult;
 
         Intent resultIntent     = getIntent();
-        String value            = resultIntent.getStringExtra("valueCel");
-        double celsiusValue     = Double.parseDouble(value);
-        double kelvinValue      = celsiusValue + 273.15;
-        String kelvinResults    = String.valueOf(kelvinValue);
-        tvValue.setText(kelvinResults);
+        ConverterFormula objectKelvin = new ConverterFormula();
+        objectKelvin.celToKelvinConvert(tvValue,resultIntent);
     }
 }

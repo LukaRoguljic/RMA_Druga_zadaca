@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -22,10 +23,7 @@ public class ResultKgToLbs extends AppCompatActivity {
         tvValue = tvLbsResult;
 
         Intent resultIntent     = getIntent();
-        String value            = resultIntent.getStringExtra("valueKg");
-        double kgValue          = Double.parseDouble(value);
-        double lbsValue         = kgValue * 2.2046;
-        String lbsResult        = String.valueOf(lbsValue);
-        tvValue.setText(lbsResult);
+        ConverterFormula objectLbs = new ConverterFormula();
+        objectLbs.kgToLbsConvert(tvValue,resultIntent);
     }
 }

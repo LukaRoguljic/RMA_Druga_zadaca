@@ -22,10 +22,7 @@ public class ResultKmToMiles extends AppCompatActivity {
         tvValue = tvMilesResult;
 
         Intent resultIntent     = getIntent();
-        String value            = resultIntent.getStringExtra("valueKm");
-        double kilometersValue  = Double.parseDouble(value);
-        double milesValue       = kilometersValue * 0.6;
-        String milesResult      = String.valueOf(milesValue);
-        tvValue.setText(milesResult);
+        ConverterFormula objectMiles = new ConverterFormula();
+        objectMiles.kmToMilesConvert(tvValue,resultIntent);
     }
 }

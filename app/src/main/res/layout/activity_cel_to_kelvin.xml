@@ -22,7 +22,6 @@
         android:layout_below="@id/titleCelsius"
         android:hint="@string/etCelsius"
         android:textColor="#000000"
-        android:maxLength="7"
         android:inputType="numberDecimal|numberSigned"
         />
 

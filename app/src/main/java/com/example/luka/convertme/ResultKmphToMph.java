@@ -22,10 +22,7 @@ public class ResultKmphToMph extends AppCompatActivity {
         tvValue = tvMphResult;
 
         Intent resultIntent = getIntent();
-        String value = resultIntent.getStringExtra("valueKmph");
-        double kmphValue = Double.parseDouble(value);
-        double mphValue = kmphValue * 0.6;
-        String mphResult = String.valueOf(mphValue);
-        tvValue.setText(mphResult);
+        ConverterFormula objectMph = new ConverterFormula();
+        objectMph.kmphToMphConvert(tvValue,resultIntent);
     }
 }
