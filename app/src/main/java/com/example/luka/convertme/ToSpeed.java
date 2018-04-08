@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -34,10 +35,17 @@ public class ToSpeed extends AppCompatActivity {
 
     @OnClick(R.id.speedConvertBtn)
         public void givResultSpeed(){
-        Intent startResult = new Intent(this,ResultSpeed.class);
-        startResult.putExtra("valueKmph", etValue.getText().toString());
-        startResult.putExtra("valueSpeed", spSpeed.getSelectedItem().toString());
-        startResult.putExtra("valueSpeedToConvert", spSpeedToConvert.getSelectedItem().toString());
-        startActivity(startResult);
+
+        if(etValue.getText().toString().matches("")){
+            Toast.makeText(this, "You did not enter value!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        else {
+            Intent startResult = new Intent(this, ResultSpeed.class);
+            startResult.putExtra("valueKmph", etValue.getText().toString());
+            startResult.putExtra("valueSpeed", spSpeed.getSelectedItem().toString());
+            startResult.putExtra("valueSpeedToConvert", spSpeedToConvert.getSelectedItem().toString());
+            startActivity(startResult);
+        }
     }
 }

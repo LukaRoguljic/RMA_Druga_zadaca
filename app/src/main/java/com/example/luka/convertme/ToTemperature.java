@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -34,10 +35,17 @@ public class ToTemperature extends AppCompatActivity {
 
     @OnClick(R.id.temperatureConvertBtn)
         public void giveResultTemperature(){
-        Intent startResult = new Intent(this,ResultTemperature.class);
-        startResult.putExtra("valueCel", etValue.getText().toString());
-        startResult.putExtra("valueTemperature", spTemperature.getSelectedItem().toString());
-        startResult.putExtra("valueTemperatureToConvert", spTemperatureToConvert.getSelectedItem().toString());
-        startActivity(startResult);
+
+        if(etValue.getText().toString().matches("")){
+            Toast.makeText(this, "You did not enter value!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        else {
+            Intent startResult = new Intent(this, ResultTemperature.class);
+            startResult.putExtra("valueCel", etValue.getText().toString());
+            startResult.putExtra("valueTemperature", spTemperature.getSelectedItem().toString());
+            startResult.putExtra("valueTemperatureToConvert", spTemperatureToConvert.getSelectedItem().toString());
+            startActivity(startResult);
+        }
     }
 }

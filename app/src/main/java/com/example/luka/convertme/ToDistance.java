@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -34,10 +35,17 @@ public class ToDistance extends AppCompatActivity {
 
     @OnClick(R.id.distanceConvertBtn)
         public void giveResultDistance(){
-        Intent startResult = new Intent(this,ResultDistance.class);
-        startResult.putExtra("valueKm", etValue.getText().toString());
-        startResult.putExtra("valueDistance", spDistance.getSelectedItem().toString());
-        startResult.putExtra("valueDistanceToConvert", spDistanceToConvert.getSelectedItem().toString());
-        startActivity(startResult);
+
+        if(etValue.getText().toString().matches("")){
+            Toast.makeText(this, "You did not enter value!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        else {
+            Intent startResult = new Intent(this, ResultDistance.class);
+            startResult.putExtra("valueKm", etValue.getText().toString());
+            startResult.putExtra("valueDistance", spDistance.getSelectedItem().toString());
+            startResult.putExtra("valueDistanceToConvert", spDistanceToConvert.getSelectedItem().toString());
+            startActivity(startResult);
+        }
     }
 }

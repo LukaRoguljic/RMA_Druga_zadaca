@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -35,11 +36,18 @@ public class ToWeight extends AppCompatActivity {
 
     @OnClick(R.id.weightConvertBtn)
         public void giveResultWeight(){
-        Intent startResult = new Intent(this,ResultWeight.class);
-        startResult.putExtra("valueKg", etValue.getText().toString());
-        startResult.putExtra("valueWeight", spWeight.getSelectedItem().toString());
-        startResult.putExtra("valueWeightToConvert", spWeightToConvert.getSelectedItem().toString());
-        startActivity(startResult);
+
+        if(etValue.getText().toString().matches("")){
+            Toast.makeText(this, "You did not enter value!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        else {
+            Intent startResult = new Intent(this, ResultWeight.class);
+            startResult.putExtra("valueKg", etValue.getText().toString());
+            startResult.putExtra("valueWeight", spWeight.getSelectedItem().toString());
+            startResult.putExtra("valueWeightToConvert", spWeightToConvert.getSelectedItem().toString());
+            startActivity(startResult);
+        }
     }
 
 }
